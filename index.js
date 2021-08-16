@@ -14,13 +14,11 @@ let total = 0;
 inputArea.value = 0;
 
 increase.addEventListener("click", function () {
-  console.log("increase was clicked");
   total = total + Number(inputArea.value);
   count.textContent = `Total = ${total}`;
 });
 
 decrease.addEventListener("click", function () {
-  console.log("decrease was clicked");
 
   total = total - Number(inputArea.value);
   count.textContent = `Total = ${total}`;
@@ -28,13 +26,15 @@ decrease.addEventListener("click", function () {
 
 rest.addEventListener("click", function () {
   console.log("rest was clicked");
-  prompt("Your saved total will be lost. Are you sure you want to rest?")
+  const confrimation = confirm("Your saved total will be lost. Are you sure you want to continue?");
+
+  if(confrimation){
   total = 0;
-  count.textContent = `Total = ${total}`;
+  count.textContent = `TOTAL = ${total}`;
   inputArea.value = 0;
+  }
 });
 
 clear.addEventListener("click", function () {
-    console.log("clear was clicked");
     inputArea.value = 0;
   });
