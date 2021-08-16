@@ -3,7 +3,7 @@
 let count = document.getElementById("count");
 const increase = document.querySelector(".increase");
 const decrease = document.querySelector(".decrease");
-const rest = document.querySelector(".rest");
+const reset = document.querySelector(".reset");
 const clear = document.querySelector(".clear");
 const inputArea = document.getElementById("inputArea");
 
@@ -26,8 +26,8 @@ decrease.addEventListener("click", function () {
   count.textContent = `TOTAL = ${total}`;
 });
 
-// Rest event
-rest.addEventListener("click", function () {
+// Reset event
+reset.addEventListener("click", function () {
 
   const confrimation = confirm("Your saved total will be lost. Are you sure you want to continue?");
 
