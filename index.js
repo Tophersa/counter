@@ -15,13 +15,13 @@ inputArea.value = 0;
 
 increase.addEventListener("click", function () {
   total = total + Number(inputArea.value);
-  count.textContent = `Total = ${total}`;
+  count.textContent = `TOTAL = ${total}`;
 });
 
 decrease.addEventListener("click", function () {
 
   total = total - Number(inputArea.value);
-  count.textContent = `Total = ${total}`;
+  count.textContent = `TOTAL = ${total}`;
 });
 
 rest.addEventListener("click", function () {
