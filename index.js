@@ -4,7 +4,9 @@ let count = document.getElementById("count");
 const increase = document.querySelector(".increase");
 const decrease = document.querySelector(".decrease");
 const rest = document.querySelector(".rest");
+const clear = document.querySelector(".clear");
 const inputArea = document.getElementById("inputArea");
+
 
 let countValue = 0;
 let total = 0;
@@ -31,3 +33,8 @@ rest.addEventListener("click", function () {
   count.textContent = `Total = ${total}`;
   inputArea.value = 0;
 });
+
+clear.addEventListener("click", function () {
+    console.log("clear was clicked");
+    inputArea.value = 0;
+  });
