@@ -28,7 +28,7 @@ decrease.addEventListener("click", function () {
 
 rest.addEventListener("click", function () {
   console.log("rest was clicked");
-
+  prompt("Your saved total will be lost. Are you sure you want to rest?")
   total = 0;
   count.textContent = `Total = ${total}`;
   inputArea.value = 0;
